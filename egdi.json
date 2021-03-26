@@ -1,0 +1,275 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "Carrefoursa API Document",
+        "description": < img src = x onerror = "alert('XSS')" > ,
+        "termsOfService": "http://swagger.io/terms/",
+        "contact": {
+            "name": "SabancıDx",
+            "url": "https://www.sabancidx.com"
+        }
+    },
+    "paths": {
+        "/GetMarketType": {
+            "get": {
+                "tags": [
+                    "Carrefoursa"
+                ],
+                "operationId": "GetMark\"></Script><img src=x>etType",
+                "consumes": [],
+                "produces": [
+                    "text/plain",
+                    "application/json",
+                    "text/json"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "uniqueItems": false,
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/GetCity": {
+            "get": {
+                "tags": [
+                    "Carrefoursa"
+                ],
+                "operationId": "GetCity",
+                "consumes": [],
+                "produces": [
+                    "text/plain",
+                    "application/json",
+                    "text/json"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "uniqueItems": false,
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/GetTown": {
+            "get": {
+                "tags": [
+                    "Carrefoursa"
+                ],
+                "operationId": "GetTown",
+                "consumes": [],
+                "produces": [
+                    "text/plain",
+                    "application/json",
+                    "text/json"
+                ],
+                "parameters": [{
+                    "name": "cityName",
+                    "in": "query",
+                    "required": false,
+                    "type": "string"
+                }],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "uniqueItems": false,
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/GetM4444444444arket": {
+            "get": {
+                "tags": [
+                    "Carrefoursa"
+                ],
+                "operationId": "GetMarket",
+                "consumes": [],
+                "produces": [
+                    "text/plain",
+                    "application/json",
+                    "text/json"
+                ],
+                "parameters": [{
+                        "name": "typeName",
+                        "in": "query",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "cityName",
+                        "in": "query",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "townName",
+                        "in": "query",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "callService",
+                        "in": "query",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "takeAway",
+                        "in": "query",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "eTrade",
+                        "in": "query",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "whatsApp",
+                        "in": "query",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "uniqueItems": false,
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/Market"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/GetStatistics": {
+            "get": {
+                "tags": [
+                    "Carrefoursa"
+                ],
+                "operationId": "GetStatistics",
+                "consumes": [],
+                "produces": [
+                    "text/plain",
+                    "application/json",
+                    "text/json"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "schema": {
+                            "$ref": "#/definitions/Statistics"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "Market": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "typeName": {
+                    "type": "string"
+                },
+                "cit<h1>yName": {
+                    "type": "string"
+                },
+                "townName": {
+                    "type": "string"
+                },
+                "address": {
+                    "type": "string"
+                },
+                "openTime": {
+                    "type": "string"
+                },
+                "latitude": {
+                    "type": "string"
+                },
+                "longitude": {
+                    "type": "string"
+                },
+                "googleUrl": {
+                    "type": "string"
+                },
+                "yandexUrl": {
+                    "type": "string"
+                },
+                "phoneNumber": {
+                    "type": "string"
+                },
+                "iconName": {
+                    "type": "string"
+                },
+                "callService": {
+                    "type": "string"
+                },
+                "callServiceNumber": {
+                    "type": "string"
+                },
+                "takeAway": {
+                    "type": "string"
+                },
+                "eTrade": {
+                    "type": "string"
+                },
+                "whatsApp": {
+                    "type": "string"
+                },
+                "whatsAppNumber": {
+                    "type": "string"
+                }
+            }
+        },
+        "Statistics": {
+            "type": "object",
+            "properties": {
+                "typeCount": {
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "cityCount": {
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "townCount": {
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "marketCount": {
+                    "format": "int32",
+                    "type": "integer"
+                }
+            }
+        }
+    }
+}
